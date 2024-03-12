@@ -31,8 +31,8 @@
 ```py
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("Gray_Mustang.jpg")
-color_image = cv2.imread("Mustang.jpg",-1)
+gray_image = cv2.imread("gray.jpeg")
+color_image = cv2.imread("co;our.jpeg",-1)
 cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
@@ -45,8 +45,8 @@ cv2.destroyAllWindows()
 ```py
 import numpy as np
 import cv2
-Gray_image = cv2.imread("Gray_Mustang.jpg")
-Color_image = cv2.imread("Mustang.jpg")
+Gray_image = cv2.imread("Gray.jpeg")
+Color_image = cv2.imread("colour.jpeg")
 import matplotlib.pyplot as plt
 gray_hist = cv2.calcHist([Gray_image],[0],None,[256],[0,256])
 color_hist = cv2.calcHist([Color_image],[0],None,[256],[0,256])
@@ -78,7 +78,7 @@ cv2.waitKey(0)
 ```py
 
 import cv2
-gray_image = cv2.imread("Mustang.jpg",0)
+gray_image = cv2.imread("colour.jpeg",0)
 cv2.imshow('Grey Scale Image',gray_image)
 equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
